@@ -47,7 +47,7 @@ def after_request(response):
 def register():
     form = forms.RegisterForm()
     if form.validate_on_submit():
-        flash("Success, you registered!", "success")
+        flash("Thanks for registering!", "success")
         models.User.create_user(
             username=form.username.data,
             email=form.email.data,
@@ -81,7 +81,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    flash("you've been logged out! Come back soon!", "success")
+    flash("You've been logged out! Come back soon!", "success")
     return redirect(url_for('index'))
 
 

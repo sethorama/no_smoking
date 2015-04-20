@@ -1,4 +1,8 @@
-/* Navigation */
+/*************************
+        
+        Navigation
+
+*************************/
 
 .nav {
     margin: 0 0 50px 0;
@@ -7,6 +11,7 @@
     display: block;
     width: 100%;
     position: fixed;
+    top: 0;
 }
 
 .nav ul {
@@ -43,20 +48,35 @@
     float: right;
 }
 
-.about img {
-    padding: 0;
+/* Flash messages */
+
+.flash-wrapper {
+    max-width: 1024px;
+    margin: 60px auto 20px;
+}
+
+.notification {
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #dffbd7;
+    color: #45db16;
     display: inline-block;
-    float: right;
-    border-radius: 50%;
-    border: 2px solid black;
+}
+
+.error {
+    background-color: #eed1d8;
+    color: #ee003e;
+    display: inline-block;
 }
 
 /* Main content */
 
-.main-wrapper {
-    margin: 60px auto;
+.main-content {
     max-width: 1024px;
-    
+    margin: auto;    
 }
 
 .main-content h1 {
@@ -66,31 +86,7 @@
 
 p {
     font-family: 'Arvo', sans-serif;
+    foat: right;
     margin: auto;
     max-width: 50%;
-}
-
-/* Notifications */
-
-.notification {
-    text-align: center;
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: #fff;
-}
-.success {
-    background: #70DA8B;
-    color: #4DA463;
-}
-.error {
-    background: #FFE6B2;
-    color: #C5A14E;
-    margin-bottom: 20px;
-}
-
-/* Forms */
-
-.field input {
-    border-radius: 4px;
-    font-family: 'Arvo', sans-serif;
 }
