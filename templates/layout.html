@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="static/normalize.css">
     <link rel="stylesheet" type="text/css" href="static/main.css">
 </head>
 <body>
     <div class="nav">
         <div id="nav-wrapper">
-            <div id="lef-nav">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                </ul>
-            </div>
-            <div id="right-nav">
-                <ul>
-                    <li><a href="">Register</a></li>
-                    <li><a href="">Login</a></li>
-                    </li>
-                </ul>
+            <ul>
+                <li class="left-nav"><a href="{{ url_for('index') }}">Home</a></li>
+                <li class="left-nav"><a href="{{ url_for('about') }}">About</a></li>
+                {% if current_user.is_authenticated() %}
+                <li class="right-nav"><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% else %}
+                <li class="right-nav"><a href="{{ url_for('register') }}">Register</a></li>
+                <li class="right-nav"><a href="{{ url_for('login') }}">Login</a></li>
+                {% endif %}                   
+            </ul>
             </div>
         </div>
     </div>
+    <div class="main-content">
     {% block content %}{% endblock %}
+    </div>
 </body>
 </html>

@@ -1,0 +1,64 @@
+/*************************
+        
+        Navigation
+
+*************************/
+
+.nav {
+    margin: 0 0 50px 0;
+    padding: 0;
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: auto;
+}
+
+.nav li {
+    padding: 10px 20px 10px 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    color: #606060;
+}
+
+.nav a:hover {
+    color: #008300;
+}
+
+#nav-wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+}
+
+/*************************
+
+        Main content
+
+*************************/
+
+.main-content {
+    margin: 60px auto;
+    max-width: 1024px;
+    
+}
+
+.main-content h1 {
+    font-family: 'Arvo', sans-serif;
+    float: left;
+}
