@@ -90,3 +90,24 @@ p {
     margin: auto;
     max-width: 50%;
 }
+
+.main-content input {
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    border: 2px solid #606060;
+    border-radius: 5px;
+}
+
+.main-content button {
+    padding: 10px 5px;
+    margin: 5px;
+    width: 150px;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5cb85c;
+    border: 2px solid #5aa74b;
+    border-radius: 6px;
+}
